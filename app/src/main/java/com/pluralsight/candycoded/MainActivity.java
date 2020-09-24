@@ -85,9 +85,8 @@ public class MainActivity extends AppCompatActivity {
     // ***
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.info) {
-            startActivity(new Intent(MainActivity.this, InfoActivity.class));
-        }
+        Intent infoIntent = new Intent(MainActivity.this, InfoActivity.class);
+        startActivity(infoIntent);
         return super.onOptionsItemSelected(item);
     }
 
